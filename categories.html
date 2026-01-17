@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>All Products - Bigger Medical Technology</title>
+    <meta name="description" content="Browse all 1000+ medical equipment products from Bigger Medical Technology, including dental equipment, rehabilitation devices, and hospital furniture.">
+    <meta name="keywords" content="Medical Equipment, Dental Instruments, Rehabilitation Devices, Hospital Furniture, OEM Medical Devices">
+    <script src="./js/jquery.min.js"></script>
+    <link rel="stylesheet" href="./css/common.css" />
+    <script src="./js/products.js"></script>
+    <script src="./js/index.js"></script>
+    <style>
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 2rem;
+            padding: 2rem 0;
+        }
+        
+        .product-card {
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+        
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        
+        .product-image img {
+            width: 100%;
+            height: 200px;
+            object-fit: contain;
+            background-color: #f8f8f8;
+        }
+        
+        .product-info {
+            padding: 1.5rem;
+        }
+        
+        .pi--desc {
+            height: 60px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            margin: 0.5rem 0;
+        }
+        
+        .product-link {
+            display: inline-block;
+            margin-top: 0.5rem;
+            color: #007bff;
+            text-decoration: none;
+        }
+        
+        .product-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo" title="BIGGER MEDICAL">
+                <img src="./images/bigger-medical-logo.png" alt="BIGGER MEDICAL Logo" />
+            </div>
+            <ul class="nav-links">
+                <li><a href="index2.html#home">Home</a></li>
+                <li><a href="index2.html#products">Products</a></li>
+                <li><a href="index2.html#services">OEM/ODM</a></li>
+                <li><a href="index2.html#about">About Us</a></li>
+                <li><a href="index2.html#contact">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="btn-inquiry">Get Quote</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 所有产品 -->
+    <section class="products" id="all-products">
+        <div class="container">
+            <h1 class="section-title">All Products (1000+ items)</h1>
+            <p class="section-subtitle">Browse our complete catalog of medical equipment, including dental instruments, rehabilitation devices, hospital furniture, and more.</p>
+            
+            <div class="product-grid" id="product-grid">
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3>Bigger Medical Technology</h3>
+                    <p>Your trusted partner in medical equipment supply for over 10 years.</p>
+                    <div class="social-links">
+                        <div class="social-icon" onclick="window.open('https://www.tiktok.com/@chinagents','_blank')">f</div>
+                        <div class="social-icon" onclick="window.open('https://www.tiktok.com/@chinagents','_blank')">in</div>
+                        <div class="social-icon" onclick="window.open('https://www.tiktok.com/@chinagents','_blank')">tk</div>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <a href="index2.html#home">Home</a>
+                    <a href="index2.html#products">Products</a>
+                    <a href="index2.html#services">Services</a>
+                    <a href="index2.html#about">About Us</a>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <p>📍 Sichuan Chengdu, China</p>
+                    <p onclick="window.open('https://wa.me/8615993038388','_blank')">📞 +86 15993038388</p>
+                    <p>✉️ jason.cn.supplychain@gmail.com</p>
+                    <p>✉️ info@bigger-health.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Bigger (Sichuan) Medical Technology Co., Ltd. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
