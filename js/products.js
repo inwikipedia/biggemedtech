@@ -983,7 +983,7 @@ $(function () {
 
   container.innerHTML = products.map(product => `
     <div class="product-card">
-      <img src="./images/products/${product}" alt="${product}" class="product-image">
+      <img src="/images/products/${product}" alt="${product}" class="product-image">
       <div class="product-info">
         <h3 class="product-name">${product.replaceAll('\.jpg','')}(MOQ: 1 set)</h3>
         <div class="product-price" onclick="window.open('https://wa.me/8615993038388','_blank')">
